@@ -1,0 +1,185 @@
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <title>Tailwind portfolio</title>
+</head>
+<body class=" backdrop-blur-lg bg-fixed" style="background-image: url('/images/background-image.jpg');">
+
+    <!-- navbar -->
+    <nav class="relative h-14 top-0 bg-gradient-to-r bg-gradient-to-r from-secondary to-primary">
+        <ul class="flex text-grayTitle justify-center">
+            <li class="mr-6">
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+          </ul>
+    </nav>
+
+    <!-- card & description section-->
+    <section id="card-description">
+        <div class="container flex flex-wrap justify-center mx-auto pt-4 gap-3">
+
+            <!-- card -->
+            <div class="bg-primary max-w-xs rounded-xl">
+                <img class="w-full rounded-t-lg" src="/images/about-image.png" alt="That's me">
+
+                    <!-- card list styling-->
+                <div class="py-2">
+                    <ul class="max-w-sm w-full divide-y text-grayTitle">
+
+                        <!-- card list items-->
+                        <li class="pb-3 px-6 sm:pb-3">
+                            <i class="fa-brands fa-github fa-2x"></i>
+                            <span class="ml-4 text-lg inline-block align-top">
+                                <a href="https://github.com/MarcelKristensen">Github</a>
+                            </span>
+
+                        <li class="pb-3 px-6 sm:pb-3 pt-3">
+                            <i class="fa-brands fa-linkedin fa-2x"></i>
+                            <span class="ml-4 text-lg inline-block align-top">
+                                <a href="https://www.linkedin.com/in/marcel-kristensen-739ab4116/">LinkedIn</a>
+                            </span>
+
+                        <li class="pb-3 px-6 sm:pb-3 pt-3">
+                            <i class="fa-regular fa-envelope fa-2x"></i>
+                            <span class="ml-4 text-lg inline-block align-top">Marc1495@edu.zealand.dk</span>
+
+                        <li class="pb-3 px-6 sm:pb-1 pt-3">
+                            <i class="fa-solid fa-phone fa-2x"></i>
+                            <span class="ml-4 text-lg inline-block align-top">81615925</span>
+                    </ul>
+                </div>
+            </div>
+            <!-- card end -->
+
+            <!-- description -->
+            <div class="bg-primary rounded-xl basis-3/5">
+                <div class="mx-14 p-5  tracking-wide">
+                <!-- description title -->
+                <p class="text-5xl text-center mb-10 font-semibold text-grayTitle">
+                    About me
+                </p>
+
+                <!-- description text top -->
+                <p class="mb-10 text-grayText">
+                    My name is Marcel Kristensen and I study at Zealand Roskilde to finish my prof-bachelor degree
+                    in Web Development. I've studied several subjects such as database management,
+                    programming, software development etc. Below I have listed the fields which I am proficient at.
+                </p>
+
+                <!-- description list -->
+                <div class="columns-3 mb-10 text-grayText">
+                        <ul class="list-disc list-inside">
+                            <li>PHP</li>
+                            <li>Python</li>
+                            <li>C#</li>
+                            <li>Javascript/Typescript</li>
+                            <li>ReactJs</li>
+                            <li>Angular</li>
+                            <li>Ionic</li>
+                            <li>SQL, MySQL</li>
+                            <li>BabylonJs</li>
+                        </ul>
+                    </div>
+                    <!-- description list end -->
+                <p class="mb-10 text-grayText">
+                    You can also find various projects of mine down in the portfolio section.
+                </p>
+                </div>
+            </div>
+            <!-- description end-->
+        </div>
+    </section>
+    <!-- card & description section end -->
+
+    <section id="portfolio">
+        <div class="container flex justify-center mx-auto pt-3">
+            <div class="bg-primary rounded-xl basis-5/6 p-5">
+            <!-- portfolio title -->
+                <p class="text-5xl text-center mb-10 font-semibold text-grayTitle">
+                    Portfolio
+                </p>
+
+                <!-- column items -->
+                <div class="grid grid-cols-3 gap-x-8 gap-y-8 mx-10 text-grayText">
+                    <div class="max-w-sm rounded overflow-hidden shadow-lg border">
+                        <img class="object-fill h-60 w-full" src="images/lemonade-webshop.png" alt="Lemonade webshop">
+                        <div class="px-6 py-4">
+                          <div class="font-bold text-xl mb-2 text-grayTitle">Lemonade Webshop</div>
+                          <p>
+                            A lemonade webshop created with ReactJs & Redux
+                          </p>
+                          <div class="text-center mt-5">
+                            <button onClick="location.href='https://github.com/MarcelKristensen/lemonade-webshop-redux'">
+                                <i class="fa-brands fa-github fa-3x text-grayTitle"></i></button>
+                        </div>
+                        </div>
+                      </div>
+
+                      <div class="max-w-sm rounded overflow-hidden shadow-lg border">
+                        <img class="object-fill h-60 w-full" src="images/estate-webshop.png" alt="Sunset in the mountains">
+                        <div class="px-6 py-4">
+                          <div class="font-bold text-xl mb-2 text-grayTitle">Estate Website</div>
+                          <p>
+                            A website for buying or selling estates created with C# and .Net Core
+                          </p>
+                          <div class="text-center mt-5">
+                            <button onClick="location.href='https://github.com/MarcelKristensen/BeckITEjendomsm-glerApplikation'">
+                                <i class="fa-brands fa-github fa-3x text-grayTitle"></i></button>
+                        </div>
+                        </div>
+                      </div>
+
+                      <div class="max-w-sm rounded overflow-hidden shadow-lg border">
+                        <img class="object-fill h-60 w-full" src="images/vent2uproject-program.png" alt="Sunset in the mountains">
+                        <div class="px-6 py-4 ">
+                          <div class="font-bold text-xl mb-2 text-grayTitle">Air Quality Data collection</div>
+                          <p>
+                            A Program to collect data about air quality created with Ionic
+                          </p>
+                          <div class="text-center mt-5">
+                            <button onClick="location.href='https://github.com/PANOPTICONISM/Vent2uProject'">
+                                <i class="fa-brands fa-github fa-3x text-grayTitle"></i></button>
+                        </div>
+                        </div>
+                      </div>
+
+                      <div class="max-w-sm rounded overflow-hidden shadow-lg border">
+                        <img class="object-fill h-60 w-full" src="images/gRPC-image.png" alt="Sunset in the mountains">
+                        <div class="px-6 py-4">
+                          <div class="font-bold text-xl mb-2 text-grayTitle">Air Data collection</div>
+                          <p>
+                            A chat program to demonstrate the power of Remote Procedure Calls
+                          </p>
+                          <div class="text-center mt-5">
+                            <button onClick="location.href='https://github.com/MarcelKristensen/GrpcDemo'">
+                                <i class="fa-brands fa-github fa-3x text-grayTitle"></i></button>
+                        </div>
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+<!--
+<img src="images/lemonade-webshop.png" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Lemonade Webshop</h4>
+                                <p class="card-text">A lemonade webshop created with ReactJs & Redux</p>
+                                <div class="text-center">
+                                    <button onClick="location.href='https://github.com/MarcelKristensen/lemonade-webshop-redux'">
+                                        <i class="fa-brands fa-github fa-3x"></i></button>
+                                </div>
+                            </div>
+
+-->
